@@ -19,7 +19,7 @@ I build things at the intersection of software and hardware: REST APIs, embedded
 
 I have a habit of re-implementing tools that already exist. Not because the world needs another ORM, but because you don't really understand Django's ORM until you've written a worse one yourself, watched it explode on edge cases nobody warned you about, and then finally read the source with new appreciation.
 
-Currently deep in Go. Just `database/sql`, raw queries, layered architecture. No magic, no shortcuts, just full accountability for every line.
+Currently deep in Go. Gin for the API layer, `database/sql` and raw queries underneath, layered architecture, Kafka when things need to talk to each other asynchronously. No magic, no shortcuts, just full accountability for every line.
 
 <br/>
 
@@ -28,11 +28,12 @@ Currently deep in Go. Just `database/sql`, raw queries, layered architecture. No
 Somewhere in the space between *"someone already made this"* and *"but I want to know how it works."*
 
 - **Non-standard implementations.** Homegrown ORMs, parsers, protocol handlers. Educational chaos, and worth every hour.
-- **Go backend services.** Gin, layered architecture (handlers, services, repositories), JWT with access and refresh tokens, MySQL without an ORM.
+- **Go backend services.** Gin, layered architecture (handlers, services, repositories), JWT with access and refresh tokens, MySQL without an ORM, WebSocket endpoints when REST isn't enough.
 - **Python everything.** FastAPI and Django APIs, Telegram bots with aiogram, Discord bots with discord.py, scrapers, automation scripts, and occasionally a full website when someone asks nicely.
-- **Robotics and CNC.** Stepper motors, motion controllers, G-code, and the deeply satisfying moment when metal moves exactly where the math said it would.
+- **Robotics and CNC.** Stepper motors, motion controllers, G-code, and the deeply satisfying moment when metal moves exactly where the math said it said would.
 - **Automation pipelines.** Scripts that run quietly for months until you forget they exist.
 - **Embedded systems.** Software that has to remember the real world exists (and occasionally disagrees with it).
+- **Event-driven services.** Kafka producers/consumers, background workers, the occasional message that arrives twice and needs to be told it's not special.
 
 <br/>
 
@@ -53,6 +54,18 @@ Somewhere in the space between *"someone already made this"* and *"but I want to
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)](https://sqlalchemy.org)
 [![Alembic](https://img.shields.io/badge/Alembic-6BA539?style=for-the-badge&logo=alembic&logoColor=white)](https://alembic.sqlalchemy.org)
 
+### APIs and Protocols
+[![REST](https://img.shields.io/badge/REST-02569B?style=for-the-badge&logo=fastapi&logoColor=white)](https://en.wikipedia.org/wiki/REST)
+[![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)](https://en.wikipedia.org/wiki/WebSocket)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io)
+
+### Messaging and Data Streaming
+[![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)](https://kafka.apache.org)
+
+### Testing
+[![Testify](https://img.shields.io/badge/Testify-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://github.com/stretchr/testify)
+[![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org)
+
 ### Python Ecosystem
 [![aiogram](https://img.shields.io/badge/aiogram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://aiogram.dev)
 [![discord.py](https://img.shields.io/badge/discord.py-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordpy.readthedocs.io)
@@ -66,12 +79,17 @@ Somewhere in the space between *"someone already made this"* and *"but I want to
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://mongodb.com)
 [![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io)
 
-### DevOps and Infrastructure
+### Cloud, DevOps and Infrastructure
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 [![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
+
+### Monitoring and Observability
+[![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)](https://prometheus.io)
+[![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)](https://grafana.com)
 
 ### Hardware and Embedded
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)](https://arduino.cc)
@@ -87,12 +105,6 @@ Somewhere in the space between *"someone already made this"* and *"but I want to
 </div>
 
 <br/>
-
-## Activity
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=commander-error404&bg_color=1a1b27&color=39FF14&line=39FF14&point=ffffff&area=true&area_color=001a00&hide_border=true&radius=8" width="100%" alt="Activity Graph"/>
-</div>
 
 <br/>
 
