@@ -133,7 +133,7 @@ Somewhere in the space between *"someone already made this"* and *"but I want to
       <img src="https://img.shields.io/badge/Gin-0d1117?style=flat-square&logo=go&logoColor=00ADD8" alt="Gin"/>
     </td>
     <td width="33%" valign="top">
-      <h3>🤖 Discord Bot<br/>Sandboxed Execution</h3>
+      <h3>🤖 Discord & Telegram Bot<br/>Sandboxed Execution</h3>
       <sub>Runs user commands in an isolated environment.</sub>
       <br/><br/>
       ▸ Docker-based process isolation<br/>
